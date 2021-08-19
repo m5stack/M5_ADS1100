@@ -10,4 +10,4 @@ M5Stack-**UNIT ADC**
 
 ## License
 
-[UNIT_ENV - MIT](LICENSE)
+[UNIT_ADC - MIT](LICENSE)
