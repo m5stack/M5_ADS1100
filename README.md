@@ -6,7 +6,7 @@ M5Stack-**UNIT ADC**
 
 ## Related Link
 
-[Docment & Datasheet](https://docs.m5stack.com/en/unit/adc)
+[Document & Datasheet](https://docs.m5stack.com/en/unit/adc)
 
 ## License
 
