@@ -1,28 +1,26 @@
 /*
 *******************************************************************************
 * Copyright (c) 2021 by M5Stack
-*                  Equipped with M5Core sample source code
-*                          配套  M5Core 示例源代码
+*                  Equipped with M5Core2 sample source code
+*                          配套  M5Core2 示例源代码
 * Visit for more information: https://docs.m5stack.com/en/unit/adc
 * 获取更多资料请访问: https://docs.m5stack.com/zh_CN/unit/adc
 *
-* Describe: ADC.  A/D转换器
-* Date: 2022/6/12
+* Product: ADC.  A/D转换器
+* Date: 2022/7/11
 *******************************************************************************
   Please connect to Port A,Use ADC Unit to convert 0 ~ 12V analog voltage into
   16-bit data and display it on the screen. 请连接端口A,利用ADC单元将0 ~
   12V模拟电压转换成16位数据显示在屏幕上。
 */
 
-#include <M5Stack.h>
-
+#include <M5Core2.h>
 #include "M5_ADS1100.h"
 
 ADS1100 ads;
 
 void setup(void) {
-    M5.begin();             // Init M5Stack.  初始化M5Stack
-    M5.Power.begin();       // Init power  初始化电源模块
+    M5.begin();             // Init M5Core2.  初始化M5Core2
     M5.lcd.setTextSize(2);  // Set the text size to 2.  设置文字大小为2
 
     // The address can be changed making the option of connecting multiple
