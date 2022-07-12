@@ -8,11 +8,7 @@
 
 #include <Wire.h>
 
-/**************************************************************************/
-/*
-        Abstract away platform differences in Arduino wire library
-*/
-/**************************************************************************/
+// Abstract away platform differences in Arduino wire library
 static uint8_t i2cread(void) {
 #if ARDUINO >= 100
     return Wire.read();
@@ -21,11 +17,7 @@ static uint8_t i2cread(void) {
 #endif
 }
 
-/**************************************************************************/
-/*
-        Abstract away platform differences in Arduino wire library
-*/
-/**************************************************************************/
+// Abstract away platform differences in Arduino wire library
 static void i2cwrite(uint8_t x) {
 #if ARDUINO >= 100
     Wire.write((uint8_t)x);
