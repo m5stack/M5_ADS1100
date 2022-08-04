@@ -22,6 +22,7 @@ ADS1100 ads;
 void setup(void) {
     M5.begin();             // Init M5StickCPlus.  初始化M5StickCPlus
     M5.Lcd.setRotation(3);  // Rotating display.  旋转显示屏
+    Wire.begin(0, 26);       // Enable I2C.  启用 I2C
 
     // The address can be changed making the option of connecting multiple
     // devices 地址可以改变，以连接多个设备
